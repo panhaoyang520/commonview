@@ -1,0 +1,8 @@
+<resources>
+    <string name="start_read">开始读取</string>
+    <string name="reset">重置</string>
+    <string name="stop_read">停止读取</string>
+    <string name="delete">删除</string>
+    <string name="audit">审核</string>
+
+</resources>

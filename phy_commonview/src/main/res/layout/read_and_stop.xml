@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/RFIDingCl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <TextView
+            android:id="@+id/startRFID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_blue"
+            android:gravity="center"
+            android:text="@string/start_read"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/read_reset"
+            android:gravity="center|right"
+            android:paddingRight="20dp"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintWidth_percent="0.3" />
+        <TextView
+            android:id="@+id/powerSet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/read_power"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintWidth_percent="0.15" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/stopRFID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/c718ec6"
+        android:gravity="center"
+        android:text="@string/stop_read"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        tool:visibility="gone" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/loading_barCode"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:background="@color/color_80D3D3D3"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="gone"-->
+<!--        tool:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/trolley_table"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/trolley_table">-->
+
+<!--        <ProgressBar-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:indeterminateDrawable="@drawable/progressbar"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="读取中..."-->
+<!--            android:textSize="35sp"-->
+<!--            android:textColor="@colors"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent" />-->
+<!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
